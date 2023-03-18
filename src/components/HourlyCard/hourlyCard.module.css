@@ -1,0 +1,72 @@
+.hour_box {
+  flex-basis: calc(100% / 4);
+  background-color: rgb(184, 205, 238);
+  color: rgb(43, 43, 43);
+  border-radius: 20px;
+}
+.hour {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+.hour_temp {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 32px;
+}
+.hour_img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.hour_weather {
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.hour_weather::first-letter {
+  text-transform: capitalize;
+}
+@media (max-width: 650px) {
+  .hour {
+    font-size: 20px;
+  }
+  .hour_temp {
+    font-size: 24px;
+  }
+  .hour_img {
+    width: 50px;
+    height: 50px;
+  }
+  .hour_weather {
+    font-size: 16px;
+  }
+  .hour_box {
+    width: 55px;
+  }
+}
+@media (max-width: 450px) {
+  .hour {
+    font-size: 12px;
+  }
+  .hour_temp {
+    font-size: 12px;
+  }
+  .hour_img {
+    width: 25px;
+    height: 25px;
+  }
+  .hour_weather {
+    font-size: 10px;
+
+    padding: 0;
+  }
+  .hour_box {
+    width: 35px;
+  }
+}
